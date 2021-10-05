@@ -360,6 +360,11 @@ class VideoPlayerOptions {
   /// currently no way to implement this feature in this platform).
   final bool mixWithOthers;
 
+  final bool observeLifeCycle;
+
   /// set additional optional player settings
-  VideoPlayerOptions({this.mixWithOthers = false});
+  VideoPlayerOptions({
+    this.mixWithOthers = false,
+    this.observeLifeCycle = true,
+  });
 }
